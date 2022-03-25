@@ -8,11 +8,11 @@ export default function index({data}) {
         {
           data.map(({id, title, body}) => (
             <div key={id}>
-              <h2>
+              <h3>
                 <Link href={`/blog/${id}`}>
                   <a>{id} - {title}</a>
                 </Link>
-              </h2>
+              </h3>
               <p>{body}</p>
             </div>
           ))
